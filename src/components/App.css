@@ -1,0 +1,87 @@
+/*App Style*/
+.container {
+    display: grid;
+    background-color: ghostwhite;
+    height: 99% ;
+    width: 99%;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: groove;
+}
+
+.item {
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+border-radius: 5px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: ghostwhite;
+}
+
+
+/*Screen Style*/
+  .screen {
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    margin: 10px;
+    height: 190px;
+    box-shadow: 4px 3px 8px 1px rgba(4,189,228,1);
+    width: 280px;
+    border-radius: 20px;
+    text-align: center;
+    color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Seat*/
+
+  .seat{
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    color: ghostwhite;
+}
+
+
+/*SeatArrangemet*/
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+
+  .seatArrangement{
+      color: ghostwhite;
+  }
+
+
+  /*Book*/
+  .bookTicket{
+      color: ghostwhite;
+  }
+
+  .finalCall{
+    display: inline-block;
+    border: groove;
+    height: 30px;
+    width: 50px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-top: 12px;
+  }

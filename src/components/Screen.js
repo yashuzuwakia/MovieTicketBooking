@@ -10,7 +10,7 @@ const Screen = (props) => {
             props.selectSeat(0);
             props.bookTicket(0);
             props.selectScreen(screen.screen)}}>
-            <h1>Screen {screen.screen.number}</h1>
+            <h1>Scree {screen.screen.number}</h1>
 
         </div>)
     })

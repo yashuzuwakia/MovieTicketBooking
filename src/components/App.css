@@ -29,9 +29,9 @@ border-radius: 5px;
   .screen {
     background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
     margin: 10px;
-    height: 190px;
+    height: 30vh;
     box-shadow: 4px 3px 8px 1px rgba(4,189,228,1);
-    width: 280px;
+    width: auto;
     border-radius: 20px;
     text-align: center;
     color: ghostwhite;

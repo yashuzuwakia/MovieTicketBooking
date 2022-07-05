@@ -26,3 +26,19 @@ export const collectRevenue = (amount) => {
         payload: amount
     }
 }
+
+export const showRevenue = (amount) => {
+    return {
+        type: 'SHOW_REVENUE',
+        payload: amount
+    }
+}
+
+export const bookSeats = (screen,seat) => {
+    
+    return {
+        type:'BOOK_SEATS',
+        payload:{seat : seat,
+        screen:screen}
+    }
+}

@@ -11,6 +11,7 @@ const Screen = (props) => {
             props.bookTicket(0);
             props.selectScreen(screen.screen)}}>
             <h1>Screen {screen.screen.number}</h1>
+
         </div>)
     })
 

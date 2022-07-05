@@ -75,11 +75,27 @@ const bookTicketReducer = (amount = 0, action) => {
 
 const collectRevenueReducer = (amount = [],action) => {
 if(action.type === 'COLLECT_REVENUE') {
-    amount=amount+action.payload
- return action.payload;
+    amount.push(action.payload);
+    return amount;
 }
 return amount;
 }
+
+const showRevenueReducer = (amount = 0,action) => {
+    if(action.type === 'SHOW_REVENUE') {
+        return action.payload;
+    }
+    return amount;
+    }
+
+    const bookSeatsReducer = (seat=[],action) => {
+        if(action.type==='BOOK_SEATS') {
+            return  seat.concat(action.payload.seat)
+            
+        }
+        return seat;
+    }
+    
 
 export default combineReducers({
     seats: seatArrangementReducer,
@@ -87,5 +103,7 @@ export default combineReducers({
     bookTicket: bookTicketReducer,
     selectScreen: selectScreenReducer,
     selectedSeat: selectedSeatReducer,
-    revenue :collectRevenueReducer
+    revenue :collectRevenueReducer,
+    showRevenue:showRevenueReducer,
+    bookedSeats:bookSeatsReducer
 })

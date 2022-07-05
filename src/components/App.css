@@ -85,3 +85,13 @@ border-radius: 5px;
     margin: 10px;
     padding-top: 12px;
   }
+
+  .again{
+    display: inline-block;
+    border: groove;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    margin: 10px;
+    padding-top: 12px;
+  }
